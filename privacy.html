@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>主動式ETF雷達 — 隱私政策</title>
+<meta name="description" content="主動雷達 App 的隱私政策:不收集任何個人資料、無帳號、無廣告、無追蹤。">
+<style>
+  /* 色值逐項對照 App 的 DesignTokens.swift(AR 命名空間),淺/深兩套 */
+  :root {
+    --bg: #FFFFFF; --fg: #111114; --sub: #8B8B93; --sub2: #A8A8B0;
+    --line: #F0F0F2; --line2: #E3E3E7; --chip: #F4F4F6; --chip-on: #6A6A72;
+    --accent: #17171B; --accent-on: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0D0D10; --fg: #F4F4F6; --sub: #85858E; --sub2: #6C6C75;
+      --line: #1C1C20; --line2: #28282E; --chip: #1A1A1F; --chip-on: #85858E;
+      --accent: #F4F4F6; --accent-on: #0D0D10;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC",
+                 "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.75; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { border-bottom: 1px solid var(--line2); padding-bottom: 28px; margin-bottom: 36px; }
+  h1 { font-size: 27px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.4px; }
+  .meta { color: var(--sub); margin: 0; font-size: 14px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 38px 0 12px; letter-spacing: -0.2px; }
+  p { margin: 0 0 14px; font-size: 15.5px; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; font-size: 15.5px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--sub2);
+      text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--fg); }
+  .sub { color: var(--sub); }
+  .lead {
+    background: var(--chip); border-radius: 12px; padding: 20px 22px; margin: 0 0 8px;
+    font-size: 16px;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  .lead strong { font-weight: 700; }
+  footer {
+    border-top: 1px solid var(--line2); margin-top: 52px; padding-top: 24px;
+    color: var(--sub2); font-size: 13px; line-height: 1.7;
+  }
+  footer a { color: var(--sub); }
+  .nav { margin-top: 14px; }
+  .nav a { margin-right: 18px; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>隱私政策</h1>
+  <p class="meta">主動式ETF雷達(主動雷達) iOS App · 生效日期:2026 年 7 月 25 日</p>
+</header>
+
+<div class="lead">
+  <p><strong>簡短版:本 App 不收集任何個人資料。</strong></p>
+  <p>沒有帳號、沒有登入、沒有廣告、沒有追蹤,也沒有任何第三方分析工具。
+  你不需要提供任何個人資訊就能使用全部功能。</p>
+</div>
+
+<h2>我們不收集的資料</h2>
+<p>本 App 不要求、不讀取、也不傳送下列任何資料:</p>
+<ul>
+  <li>姓名、電子郵件、電話號碼或任何聯絡資訊</li>
+  <li>帳號、密碼或身分識別碼</li>
+  <li>位置資訊</li>
+  <li>通訊錄、照片、相機、麥克風或行事曆</li>
+  <li>廣告識別碼(IDFA)或任何跨 App 追蹤識別碼</li>
+  <li>使用行為分析、當機回報或效能遙測</li>
+</ul>
+<p>本 App 未整合任何第三方 SDK,包含廣告、分析與社群登入。
+App 也不會顯示 App 追蹤透明度(ATT)授權請求,因為它不進行任何形式的追蹤。</p>
+
+<h2>App 會連線到哪裡</h2>
+<p>使用時,App 只會向我們自有的伺服器請求公開的 ETF 與股價資料。
+這些請求<strong>不包含任何使用者識別資訊</strong> —— 沒有帳號、沒有裝置識別碼、沒有 cookie,
+請求內容僅為「要查哪一檔 ETF」這類公開查詢參數。所有連線均使用 HTTPS 加密。</p>
+
+<h2>伺服器記錄</h2>
+<p>我們的 API 服務架設於 Cloudflare。與所有網路服務相同,Cloudflare 平台會產生標準的
+伺服器存取記錄(可能包含來源 IP 位址、請求時間與請求路徑),用途僅限於維持服務運作、
+排除故障與防止濫用。</p>
+<p>我們不會將這些記錄與任何個人身分連結,不會用於分析個別使用者行為,不會用於廣告或追蹤,
+也不會出售或分享給第三方。這些記錄由 Cloudflare 依其自身政策保存,我們不另行建立
+使用者層級的資料庫。</p>
+
+<h2>裝置上的本機資料</h2>
+<p>下列資料只存在你的裝置裡,不會傳送給我們或任何第三方:</p>
+<ul>
+  <li><strong>資料快取</strong> — 上一次成功取得的 API 回應快照,用於下次開啟時立即顯示內容,
+  不必空白等待。由 iOS 系統的快取機制管理。</li>
+  <li><strong>介面偏好</strong> — 例如你已查看過哪一檔 ETF 的異動資訊(用於顯示未讀標記)。</li>
+</ul>
+<p>刪除 App 即會一併清除上述所有本機資料。</p>
+
+<h2>兒童隱私</h2>
+<p>本 App 不針對 13 歲以下兒童設計,也不會刻意收集兒童的個人資料 ——
+事實上本 App 不收集任何年齡層使用者的個人資料。</p>
+
+<h2>你的權利</h2>
+<p>由於本 App 不收集也不儲存任何可識別個人的資料,我們手上沒有屬於你的個人資料可供查詢、
+更正、匯出或刪除。若你對此有任何疑問,歡迎依下方方式與我們聯絡。</p>
+
+<h2>政策變更</h2>
+<p>若本政策有所修改,我們會更新本頁面並調整上方的生效日期。
+若未來版本新增任何會收集資料的功能,我們會在該功能推出前先行更新本政策,並於 App 內明確告知。</p>
+
+<h2>聯絡我們</h2>
+<p>隱私相關問題請來信:<a href="mailto:gogoqaz@gmail.com">gogoqaz@gmail.com</a></p>
+
+<footer>
+  <p>本 App 為公開資訊之整理工具,所有內容僅供參考,不構成任何投資建議。
+  本 App 與其中提及之投信、基金發行機構、證券交易所均無合作、贊助或隸屬關係。</p>
+  <div class="nav">
+    <a href="./index.html">支援與說明</a>
+    <a href="mailto:gogoqaz@gmail.com">聯絡</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
